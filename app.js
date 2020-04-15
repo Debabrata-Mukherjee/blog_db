@@ -34,7 +34,7 @@ app.use(express.json());
 
 
 app.get("/", (req, res) => {
-  res.render('login');
+  res.send("<h1>Welcome to My Pathetic API!!!</h1>");
 });
 
 app.use("/user", user);
